@@ -1,0 +1,35 @@
+saisree@INLEN6239009192:~/student_record$ valgrind ./student
+==257== Memcheck, a memory error detector
+==257== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==257== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==257== Command: ./student
+==257==
+--------------------Admin Login--------------------
+Enter Username: admin
+Enter Password:
+Logged in Successfully!!
+--------------------Menu-----------------------
+1. Add Record
+2. Delete Record
+3. Modify Record
+4. Search Record
+5. Display Record
+0. Exit
+Enter the choice:
+0
+==257==
+==257== HEAP SUMMARY:
+==257==     in use at exit: 120 bytes in 1 blocks
+==257==   total heap usage: 8 allocs, 7 frees, 88,104 bytes allocated
+==257==
+==257== LEAK SUMMARY:
+==257==    definitely lost: 0 bytes in 0 blocks
+==257==    indirectly lost: 0 bytes in 0 blocks
+==257==      possibly lost: 0 bytes in 0 blocks
+==257==    still reachable: 120 bytes in 1 blocks
+==257==         suppressed: 0 bytes in 0 blocks
+==257== Rerun with --leak-check=full to see details of leaked memory
+==257==
+==257== For lists of detected and suppressed errors, rerun with: -s
+==257== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+saisree@INLEN6239009192:~/student_record$
